@@ -1,3 +1,5 @@
+# It's suggested that you should clone the master branch
+
 # DeepMIL Pytorch Version
 
 Unofficial implemention of "Real-world Anomaly Detection in Surveillance Videos" CVPR2018
