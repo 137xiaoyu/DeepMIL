@@ -16,10 +16,10 @@ parser.add_argument('--test-rgb-list', default='list/ucf-i3d-test.list', help='l
 parser.add_argument('--gt', default='list/gt-ucf.npy', help='file of ground truth ')
 
 # training settings
-parser.add_argument('--gpus', default=3, type=int, choices=[0, 1, 2, 3, 4, 5, 6, 7], help='gpus')
+parser.add_argument('--gpus', default=0, type=int, choices=[0, 1, 2, 3, 4, 5, 6, 7], help='gpus')
 parser.add_argument('--lr', type=float, default=0.0001, help='learning rate (default: 0.0001)')
 parser.add_argument('--batch-size', type=int, default=128, help='number of instances in a batch of data (default: 16)')
-parser.add_argument('--workers', default=16, help='number of workers in dataloader')
+parser.add_argument('--workers', default=8, help='number of workers in dataloader')
 parser.add_argument('--max-epoch', type=int, default=20, help='maximum iteration to train (default: 30)')
 
 # useless settings
