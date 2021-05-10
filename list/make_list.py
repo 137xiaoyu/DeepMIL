@@ -5,7 +5,7 @@ import glob
 '''
 FOR UCF CRIME
 '''
-root_path = 'D:/Users/Chase/dataset/UCF-Crime/I3D/Train/RGB/'
+root_path = 'D:/137/dataset/UCF-Crime/I3D/Train/RGB/'
 dirs = sorted(glob.glob(os.path.join(root_path, "*")))
 # dirs = sorted(os.listdir(root_path)) # 两种用法都可以
 print(dirs)

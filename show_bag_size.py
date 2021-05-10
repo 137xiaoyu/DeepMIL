@@ -52,10 +52,10 @@ if __name__ == "__main__":
     print('train list length anomaly: {}'.format(len(list_anomaly)))
     print('test list length: {}'.format(len(list_test)))
     print('-' * 10)
-    print('feet train bag size normal: {}'.format(
-        feet_train_bag_size_normal))
-    print('feet train bag size anomaly: {}'.format(
-        feet_train_bag_size_anomaly))
+    print('feet train bag size normal: {} = {} * 32 (bags per video)'.format(
+        feet_train_bag_size_normal, len(list_normal)))
+    print('feet train bag size anomaly: {} = {} * 32 (bags per video)'.format(
+        feet_train_bag_size_anomaly, len(list_anomaly)))
     print('total train bag size normal: {}'.format(
         total_train_bag_size_normal))
     print('total train bag size anomaly: {}'.format(
@@ -63,4 +63,4 @@ if __name__ == "__main__":
     print('-' * 10)
     print('total test bag size: {}'.format(total_test_bag_size))
     print('frame gt test size: {} (frames) = {} (bags) * {} (frames per bag)'.format(
-        frame_gt_test.shape[0], total_test_bag_size, frame_gt_test.shape[0] / total_test_bag_size))
+        frame_gt_test.shape[0], total_test_bag_size, int(frame_gt_test.shape[0] / total_test_bag_size)))
